@@ -112,3 +112,10 @@ p {
         font-size: 500%;
     }
 }
+@media screen and (max-width:500px) {
+    .image {
+        max-width: 150px;
+        margin-left: auto;
+        margin-top: auto;
+      }
+}
