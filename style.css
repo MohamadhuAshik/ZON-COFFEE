@@ -6,11 +6,11 @@
 }    
 .content {
     display: flex;
-     flex-wrap: wrap; 
+     flex-wrap: nowrap; 
 }
 .blue {
-   flex-grow: 1;
-    width: auto;
+  
+    width: 70%;
     height:130vh;
     margin-left: 10px;
     background-color: rgb(5, 5, 44);
@@ -19,8 +19,8 @@
 
 }
 .red {
-    flex-grow: 1;
-    width: 25%;
+    
+    width: 28%;
     margin-right: 10px;
     height: 130vh;
     background-color: rgb(209, 33, 33);
@@ -88,4 +88,27 @@ p {
     flex-wrap: wrap;
     margin-left: 60%;
     margin-top:-50% ;
+}
+@media screen and (max-width:940px) {
+    
+    
+    .blue nav ul li{
+        display: block;
+        padding: auto;
+        margin-top: 5vh;
+    }
+    .image{
+        max-width: 300px;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    .red {
+        flex-wrap: nowrap;
+    }
+    .submain{
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 500%;
+    }
 }
